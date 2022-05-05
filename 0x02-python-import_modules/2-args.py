@@ -7,7 +7,7 @@ def print_arg(argv):
     else:
         if n == 1:
             print("{:d} argument:".format(n))
-
+            print("{:d}: {:s}".format(n, argv[n]))
         else:
             print("{:d} arguments:".format(n))
             i = 1
