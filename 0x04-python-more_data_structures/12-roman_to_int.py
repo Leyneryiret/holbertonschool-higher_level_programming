@@ -12,4 +12,9 @@ def roman_to_int(roman_string):
             if c == symbol:
                 int_num.append(roman_num.get(symbol))
 
+    last = len(int_num)
+    if last >= 1:
+        for i in range(last - 1):
+            if int_num[i] < int_num[i + 1]:
+                int_num[i] *= -1
     return sum(int_num)
