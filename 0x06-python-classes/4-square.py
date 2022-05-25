@@ -8,9 +8,9 @@ class Square:
         """Initialize Square with size attribute"""
         self.__size = size
 
-        def area(self):
-            """Method that returns the current square area"""
-            return (self.__size * self.__size)
+    def area(self):
+        """Method that returns the current square area"""
+        return (self.__size * self.__size)
 
     @property
     def size(self):
