@@ -6,12 +6,12 @@ class Square:
     """class Square that defines a square by: (based on 5-square.py)"""
     def __init__(self, size=0, position=(0, 0)):
         """Initialize Square with size and position attribute"""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Method that returns the current square area"""
-        return (self.__size * self.__size)
+        return (self.size * self.size)
 
     @property
     def size(self):
