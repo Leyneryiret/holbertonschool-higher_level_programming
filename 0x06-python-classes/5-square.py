@@ -3,7 +3,7 @@
 
 
 class Square:
-    """class Square that defines a square by: (based on 3-square.py)"""
+    """class Square that defines a square by: (based on 4-square.py)"""
     def __init__(self, size=0):
         """Initialize Square with size attribute"""
         self.__size = size
