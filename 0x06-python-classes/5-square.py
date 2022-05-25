@@ -30,8 +30,8 @@ class Square:
     def my_print(self):
         """Method that prints the square"""
         if self.__size > 0:
-            for i in range (self.__size):
-                for j in range (self.__size):
+            for i in range(self.__size):
+                for j in range(self.__size):
                     print("#", end="")
                 print("")
         else:
