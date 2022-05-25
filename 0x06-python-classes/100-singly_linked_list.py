@@ -8,32 +8,33 @@ class Node:
         """Initialize Node with nodo attribute"""
         self.data = data
         self.next_node = next_node
-        
-        @property
-        def data(self):
-            """Method to retrieve the data"""
-            return (self.__data)
-        
-        @data.setter
-        def data(self, value):
-            """Setting a new value"""
-            if type(value) is not int:
-                raise TypeError("data must be an integer")
-            else:
-                self.__data = value
 
-         @property
-         def next_node(self):
-             """Method to retrieve the next_node"""
-             return (self.__next_node)
-         
-         @next_node.setter
-         def next_node(self, value):
-             """Setting a new value"""
-             if value == Node or value == None:
-                 self.__next_node = value
-             else:
-                 raise TypeError("next_node must be a Node object")
+    @property
+    def data(self):
+        """Method to retrieve the data"""
+        return (self.__data)
+
+    @data.setter
+    def data(self, value):
+        """Setting a new value"""
+        if type(value) is not int:
+            raise TypeError("data must be an integer")
+        else:
+            self.__data = value
+
+    @property
+    def next_node(self):
+        """Method to retrieve the next_node"""
+        return (self.__next_node)
+
+    @next_node.setter
+    def next_node(self, value):
+        """Setting a new value"""
+        if value != Node or value != 'None':
+            raise TypeError("next_node must be a Node object")
+        else:
+            self.__next_node = value
+
 
 """  Singly linked list class """
 
