@@ -38,8 +38,13 @@ Passing an integer and a string:
     Traceback (most recent call last):
     TypeError: b must be an integer
 
+Passing an string and a integer:
+    >>> add_integer("hola", 4)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+	    
 Passing two characters:
-    >>> add_integer('5', '5')
+    >>> add_integer('12', '12')
     Traceback (most recent call last):
     TypeError: a must be an integer
 
