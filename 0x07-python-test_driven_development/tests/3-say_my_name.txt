@@ -10,15 +10,15 @@ First, import the method from the module:
 Now, use it passing two arguments (first_name, last_name=""):
 
 Print a name:
-    >>> say_my_name("Lynn", "Margulis")
-    My name is Lynn Margulis
+    >>> say_my_name("Leyner", "lopez")
+    My name is Leyner lopez
 
 Passing one argument:
-    >>> say_my_name("Frank")
-    My name is Frank
+    >>> say_my_name("Leyner")
+    My name is Leyner
 
 Passing an integer:
-    >>> say_my_name(95, "Sinatra")
+    >>> say_my_name(95, "Lopez")
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
