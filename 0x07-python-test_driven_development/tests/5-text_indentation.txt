@@ -1,0 +1,49 @@
+The ``5-`text_indentation` module
+===================================
+
+Using ``text_indentation``
+----------------------------
+
+First, import the method from the module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now, use it passing one argument ("text"):
+Passing a string with multiple spaces:
+    >>> text_indentation("     Hi. How are you?     ")
+    Hi.
+    How are you?
+
+Passing all special characters:
+    >>> text_indentation(".?:")
+    .
+    ?
+    :
+
+
+Passing a new line:
+    >>> text_indentation("  \n  ")
+    <BLANKLINE>
+
+Passing non-string arguments:
+    >>> text_indentation(2022)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(["Everything is going to be fine"])
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Passing without any argument:
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Passing with more the one argument:
+    >>> text_indentation("Hi", "Are you there")
+    Traceback (most recent call last):
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+Passing None:
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
