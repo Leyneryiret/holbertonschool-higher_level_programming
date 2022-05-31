@@ -58,6 +58,16 @@ Passing None:
     Traceback (most recent call last):
     TypeError: a must be an integer
 
+Passing None and int or float:
+    >>> add_integer(None, 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    
+Passing int or float and None:
+    >>> add_integer(3, None)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
 Passing without any arguments:
     >>> add_integer()
     Traceback (most recent call last):
