@@ -37,8 +37,8 @@ Passing string/characters into the matrix:
 
 Passing a tuple into the matrix:
     >>> matrix_divided([(5, 12), (15, 10)], 2)
-        Traceback (most recent call last):
-	    TypeError: matrix must be a matrix (list of lists) of integers/floats
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Passing a matrix with different size:
     >>> matrix_divided([[5, 25, 12], [15, 10]], 4)
