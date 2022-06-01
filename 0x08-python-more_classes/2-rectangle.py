@@ -41,12 +41,12 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
+    """Public instance method, that returns the rectangle area"""
     def area(self):
-        """Public instance method, that returns the rectangle area"""
-        return (self.__width * self.__heigth)
-
+        return (self.width * self.height)
+    
+    """Public instance method, that returns the rectangle perimeter"""
     def perimeter(self):
-        """Public instance method, that returns the rectangle perimeter"""
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
-        return (self.__width * 2) + (self.__height * 2)
+        return ((self.width * 2) + (self.height * 2))
