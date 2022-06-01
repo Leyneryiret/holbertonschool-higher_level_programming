@@ -6,7 +6,7 @@ Define the class Rectangle
 
 class Rectangle:
     """ Class rectangle that defines a
-    rectangle by: (based on 2-rectangle.py)"""
+    rectangle by: (based on 3-rectangle.py)"""
 
     def __init__(self, width=0, height=0):
         """ Initialize the rectangle """
@@ -62,3 +62,8 @@ class Rectangle:
             impri += "\n"
         impri = impri[:-1]
         return (impri)
+
+    """ Extract the representation of the rectangle with repr """
+    def __repr__(self):
+        rep = "Rectangle({self.width}, {self.height})".format(self=self)
+        return rep
