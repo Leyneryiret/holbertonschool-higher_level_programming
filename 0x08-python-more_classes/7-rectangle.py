@@ -6,9 +6,10 @@ Define the class Rectangle
 
 class Rectangle:
     """ Class rectangle that defines a
-    rectangle by: (based on 5-rectangle.py)"""
+    rectangle by: (based on 6-rectangle.py)"""
     number_of_instances = 0
-    
+    print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """ Initialize the rectangle """
         self.width = width
@@ -60,7 +61,7 @@ class Rectangle:
             return (impri)
         for i in range(self.height):
             for j in range(self.width):
-                impri += "#"
+                impri += str(self.print_symbol)
             impri += "\n"
         impri = impri[:-1]
         return (impri)
