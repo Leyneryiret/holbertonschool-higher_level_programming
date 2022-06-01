@@ -89,7 +89,7 @@ class Rectangle:
         else:
             return rect_1
 
-        """ Class method to create a square using the rectangle class """
-        @classmethod
-        def square(cls, size=0):
-            return (cls(size, size))
+    """ Class method to create a square using the rectangle class """
+    @classmethod
+    def square(cls, size=0):
+        return (cls(size, size))
