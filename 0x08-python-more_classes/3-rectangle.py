@@ -51,14 +51,14 @@ class Rectangle:
             return 0
         return ((self.width * 2) + (self.height * 2))
 
-     """ __str__ method to print the Rectangle """
-     def __str__(self):
-         impri = ""
-         if self.height == 0 or self.width == 0:
-             return (impri)
-         for i in range(self.height):
-             for j in range(self.width):
-                 impri += "#"
+    """ __str__ method to print the Rectangle """
+    def __str__(self):
+        impri = ""
+        if self.height == 0 or self.width == 0:
+            return (impri)
+        for i in range(self.height):
+            for j in range(self.width):
+                impri += "#"
             impri += "\n"
         impri = impri[:-1]
         return (impri)
