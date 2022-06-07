@@ -2,6 +2,7 @@
 
 """ Module for geometry class. """
 
+
 class BaseGeometry:
     """ empty class BaseGeometry. """
 
