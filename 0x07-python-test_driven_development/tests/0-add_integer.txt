@@ -35,11 +35,11 @@ Subtracting two negative float numbers:
 
     >>> add_integer(float('inf'), 3)
     Traceback (most recent call last):
-    TypeError: a must be an integer
+    OverflowError: cannot convert float infinity to integer
 
     >>> add_integer(float('NaN'), 3)
     Traceback (most recent call last):
-    TypeError: a must be an integer
+    ValueError: cannot convert float NaN to integer
 
 Passing an integer and a string:
     >>> add_integer(4, "Hi")
