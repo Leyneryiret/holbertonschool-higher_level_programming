@@ -73,7 +73,11 @@ class Rectangle(Base):
 
     """Public instance method, that returns the rectangle display"""
     def display(self):
+        for a in range(self.y):
+            print()
         for i in range(self.height):
+            for b in range(self.x):
+                print(" ", end="")
             for j in range(self.width):
                 print('#', end="")
             print()
