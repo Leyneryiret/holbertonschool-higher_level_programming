@@ -87,7 +87,7 @@ class Rectangle(Base):
             .format(self.id, self.x, self.y, self.width, self.height)
 
     """ assigns an argument to each attribute. """
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         if (args):
             if (len(args) >= 1):
                 self.id = args[0]
@@ -99,3 +99,11 @@ class Rectangle(Base):
                 self.x = args[3]
             if (len(args) >= 5):
                 self.y = args[4]
+        elif (kwargs):
+            for (key, value) in kwargs.items():
+                setattr(self, key, value)
+
+    """ Returns the class dictionary. """
+    def to_dictionary(self):
+        return {'x': self.x, 'y': self.y, 'id': self.id,
+                'height': self.height, 'width': self.width}
