@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Create, Base, the base of all other classes """
 
+
 class Base:
     """ base” of all other classes """
     __nb_objects = 0
@@ -15,7 +16,7 @@ class Base:
 
     @id.setter
     def id(self, value):
-        if value == None:
+        if value is None:
             Base.__nb_objects += 1
             self.__id = Base.__nb_objects
         else:
