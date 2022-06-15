@@ -21,9 +21,9 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+            raise TypeError("width must be an integer")
         elif value <= 0:
-            raise ValueError("size must be > 0")
+            raise ValueError("width must be > 0")
         else:
             self.__width = value
             self.__height = value
