@@ -5,7 +5,6 @@
 import json
 
 
-
 class Base:
     """ base” of all other classes """
     __nb_objects = 0
@@ -58,4 +57,3 @@ class Base:
             new = cls(1)
         new.update(**dictionary)
         return (new)
-    
