@@ -34,6 +34,7 @@ class Square(Rectangle):
             .format(self.id, self.x, self.y, self.size)
     
     def update(self, *args, **kwargs):
+        """ assigns an argument to each attribute. """
         if (args):
             if (len(args) >= 1):
                 self.id = args[0]
@@ -47,7 +48,7 @@ class Square(Rectangle):
             for (key, value) in kwargs.items():
                 setattr(self, key, value)
 
-    """ the class dictionary. """
     def to_dictionary(self):
+        """ the class dictionary. """
         return {'x': self.x, 'y': self.y, 'id': self.id,
                 'size': self.size}
