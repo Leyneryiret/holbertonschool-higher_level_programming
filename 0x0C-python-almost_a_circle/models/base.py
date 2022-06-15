@@ -57,3 +57,17 @@ class Base:
             new = cls(1)
         new.update(**dictionary)
         return (new)
+
+    @classmethod
+    def load_from_file(cls):
+        ret = []
+        try:
+            with open("{}.json".format(cls.__name__), 'r') as file:
+                str_list = file.read()
+            dict_list = cls.from_json_string(str_list)
+        except:
+            dict_list = dict()
+        for obj_dict in dict_list:
+            new_obj = cls.create(**obj_dict)
+            ret.append(new_obj)
+        return(ret)

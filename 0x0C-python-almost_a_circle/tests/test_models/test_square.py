@@ -223,15 +223,6 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(ret, s)
         os.remove("Square.json")
 
-    def test_square_savetofile_something(self):
-        ret = '[{"id": 4, "x": 2, "size": 1, "y": 3}]'
-        r1 = Square(1, 2, 3, 4)
-        Square.save_to_file([r1])
-        with open("Square.json", "r") as file:
-            s = (file.read())
-        self.assertEqual(ret, s)
-        os.remove("Square.json")
-
     def test_square_loadfromfile_nofile(self):
         try:
             os.remove("Square.json")
