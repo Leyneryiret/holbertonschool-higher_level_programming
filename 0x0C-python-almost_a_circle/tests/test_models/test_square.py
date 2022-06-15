@@ -94,11 +94,6 @@ class TestSquare(unittest.TestCase):
         s = f.getvalue()
         self.assertEqual(ret, s)
 
-    def test_square_todictionary(self):
-        test_square = Square(1, 2, 3, 4)
-        ret = {'id': 4, 'x': 2, 'size': 1, 'y': 3}
-        self.assertEqual(test_square.to_dictionary(), ret)
-
     def test_square_update_empty(self):
         test_square = Square(1)
         dict_1 = test_square.to_dictionary()
