@@ -28,11 +28,10 @@ class Square(Rectangle):
             self.__width = value
             self.__height = value
 
-
     def __str__(self):
         return "[Square] ({}) {}/{} - {}"\
             .format(self.id, self.x, self.y, self.size)
-    
+
     def update(self, *args, **kwargs):
         """ assigns an argument to each attribute. """
         if (args):
