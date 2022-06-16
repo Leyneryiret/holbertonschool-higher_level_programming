@@ -68,12 +68,12 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
+    """Public instance method, that returns the rectangle area"""
     def area(self):
-        """Public instance method, that returns the rectangle area"""
         return (self.width * self.height)
 
+    """Public instance method, that returns the rectangle display"""
     def display(self):
-        """Public instance method, that returns the rectangle display"""
         for a in range(self.y):
             print()
         for i in range(self.height):
@@ -87,8 +87,8 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.id, self.x, self.y, self.width, self.height)
 
+    """ assigns an argument to each attribute. """
     def update(self, *args, **kwargs):
-        """ assigns an argument to each attribute. """
         if (args):
             if (len(args) >= 1):
                 self.id = args[0]
@@ -104,7 +104,7 @@ class Rectangle(Base):
             for (key, value) in kwargs.items():
                 setattr(self, key, value)
 
+    """ Returns the class dictionary. """
     def to_dictionary(self):
-        """ Returns the class dictionary. """
         return {'x': self.x, 'y': self.y, 'id': self.id,
                 'height': self.height, 'width': self.width}
